@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 
+        - Remixicon
+     -->
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- 
+        -Custom css link
+     -->
+     <link rel="stylesheet" href="./styles/style.css">
+
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <nav class="navbar">
+
+            <!-- Logo -->
+            <div class="logo-container">
+                <button type="button" class="logo-container__hamburger-menu" id="hamburgerButton">
+                    <i class="ri-menu-line"></i>
+                </button>
+                
+                <div class="logo">
+                    <img src="./assets/icons/logo.png" class="logo__img" alt="">
+                    <p class="logo__text">VideoTube</p>
+                </div>
+            </div>
+
+            <!-- Search bar -->
+            <div class="search-container">
+                <form action="" class="search-bar">
+                    <input type="text" class="search-bar__input" placeholder="Search">
+                    <button type="submit" class="search-bar__button">
+                        <i class="ri-search-line"></i>
+                    </button>
+                </form>
+                <button type="button" class="micro-button">
+                    <i class="ri-mic-fill"></i>
+                </button>
+            </div>
+
+            <!-- User options -->
+            <div class="user-options">
+                <i class="ri-video-add-line"></i>
+                <i class="ri-grid-fill"></i>
+                <i class="ri-notification-4-line"></i>
+
+                <!-- Profile -->
+                <div class="user-profile">
+                    <img src="./assets/images/cameron.png" alt="" class="user-profile__img">
+                </div>
+            </div>
+
+        </nav>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <a href="" class="sidebar__item">
+                <i class="ri-home-5-line"></i>Home
+            </a>
+            <a href="" class="sidebar__item">
+                <i class="ri-compass-3-line"></i>Explore
+            </a>
+            <a href="" class="sidebar__item">
+                <i class="ri-wireless-charging-line"></i>Shorts
+            </a>
+            <a href="" class="sidebar__item">
+                <i class="ri-rss-line"></i>Subscription
+            </a>
+            <hr>
+
+            <a href="" class="sidebar__item">
+                <i class="ri-links-line"></i>Library
+            </a>
+            <a href="" class="sidebar__item">
+                <i class="ri-history-line"></i>History
+            </a>
+            <a href="" class="sidebar__item">
+                <i class="ri-video-line"></i>Your videos
+            </a>
+            <a href="" class="sidebar__item">
+                <i class="ri-time-line"></i>Watch later
+            </a>
+            <a href="" class="sidebar__item">
+                <i class="ri-play-list-2-line"></i>All videos
+            </a>
+            <a href="" class="sidebar__item">
+                <i class="ri-arrow-down-s-line"></i>Show more
+            </a>
+            <hr>
+
+            <a href="" class="sidebar__item">
+                <i class="ri-keyboard-box-line"></i>Gaming
+            </a>
+            <a href="" class="sidebar__item">
+                <i class="ri-live-line"></i>Live
+            </a>
+            <a href="" class="sidebar__item">
+                <i class="ri-award-line"></i>Sports
+            </a>
+            <hr>
+
+            <a href="" class="sidebar__item">
+                <i class="ri-settings-5-line"></i>Settings
+            </a>
+            <a href="" class="sidebar__item">
+                <i class="ri-flag-line"></i>Report history
+            </a>
+            <a href="" class="sidebar__item">
+                <i class="ri-question-line"></i>Help
+            </a>
+            <a href="" class="sidebar__item">
+                <i class="ri-feedback-line"></i>Send feedback
+            </a>
+        </aside>
+
+        <!-- Filters -->
+        <div class="filters">
+            <button class="filter-option">All</button>
+            <button class="filter-option">CSS</button>
+            <button class="filter-option">entertaiment</button>
+            <button class="filter-option">Javascript</button>
+            <button class="filter-option">Trending</button>
+            <button class="filter-option">HTML</button>
+        </div>
+
+        <!-- Videos -->
+        <main class="video-container">
+            <div class="video">
+                <!-- Video thumbnail -->
+                <img class="video__img" src="./assets/images/thumbnail.png" alt="">
+                <!-- Video content -->
+                <div class="video-content">
+                    <img class="video-content__img" src="./assets/images/Jack.png" alt="">
+                    <div class="video-info">
+                        <h4 class="video-info__title">youtube clone | create working youtube clone</h4>
+                        <p class="video-info__channel-name">modern web</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- 
+        - custom js link
+     -->
+     <script type="module" src="./scripts/script.js"></script>
+</body>
+</html>
