@@ -270,9 +270,14 @@ hr{
     object-fit: cover;
 }
 .video-info__title{
-
+    width: 100%;
+    height: 2.5rem;
+    overflow: hidden;
+    line-height: 1.25rem;
 }
 .video-info__channel-name{
+    margin-top: 0.25rem;
     font-size: 0.88rem;
+    line-height: 1.25rem;
     color: var(--color-gray-lighter);
 }
