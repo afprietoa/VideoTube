@@ -1,4 +1,4 @@
-export const printCards = (containerCards, arrayCards) => {
+export const printGridCards = (containerCards, arrayCards) => {
     console.log(arrayCards.length)
     containerCards.innerHTML = '';
     arrayCards.forEach((card) => {

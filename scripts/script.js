@@ -1,6 +1,6 @@
 import { getChannels } from "../helpers/getChannels.js";
 import { getVideos } from "../helpers/getVideos.js";
-import { printCards } from "../modules/printCards.js";
+import { printGridCards } from "../modules/printGridCards.js";
 
 const container = document.querySelector('.container');
 const hamburgerButton = document.getElementById('hamburgerButton');
@@ -24,11 +24,22 @@ document.addEventListener('DOMContentLoaded', async ()=>{
             videos.push(video);
         });
         setTimeout(() => {            
-            printCards(videoContainer, videos);
+            printGridCards(videoContainer, videos);
         }, 1000);
         
     } catch (error) {
         console.log(error);
     }
     
+});
+
+document.addEventListener('click', ({target}) =>{
+    if(target.classList.contains('video__img')){
+        const video = videos.filter(
+            vdo => vdo.id === target.id
+            );
+        console.log(video[0]);
+        sessionStorage.setItem('video', JSON.stringify(video[0]));
+        location.href = '../pages/player.html'
+    }
 });
