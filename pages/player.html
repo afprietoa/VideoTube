@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoTube</title>
+    <!-- 
+        - Remixicon
+     -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- 
+        -Custom css link
+     -->
+    <link rel="stylesheet" href="../styles/player.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- Navbar -->
+        <nav class="navbar">
+
+            <!-- Logo -->
+            <div class="logo-container">
+                <button type="button" class="logo-container__hamburger-menu" id="hamburgerButton">
+                    <i class="ri-menu-line"></i>
+                </button>
+
+                <div class="logo">
+                    <img src="../assets/icons/logo.png" class="logo__img" alt="">
+                    <p class="logo__text">VideoTube</p>
+                </div>
+            </div>
+
+            <!-- Search bar -->
+            <div class="search-container">
+                <form action="" class="search-bar">
+                    <input type="text" class="search-bar__input" placeholder="Search">
+                    <button type="submit" class="search-bar__button">
+                        <i class="ri-search-line"></i>
+                    </button>
+                </form>
+                <button type="button" class="micro-button">
+                    <i class="ri-mic-fill"></i>
+                </button>
+            </div>
+
+            <!-- User options -->
+            <div class="user-options">
+                <i class="ri-video-add-line"></i>
+                <i class="ri-grid-fill"></i>
+                <i class="ri-notification-4-line"></i>
+
+                <!-- Profile -->
+                <div class="user-profile">
+                    <img src="../assets/images/cameron.png" alt="" class="user-profile__img">
+                </div>
+            </div>
+
+        </nav>
+
+        <!-- Container -->
+        <div class="container">
+            <!-- Video Player -->
+            <div class="video-player">
+                <!-- Video -->  
+                <div class="video-container">
+                    <iframe 
+                        class="video__iframe"
+                        src="https://www.youtube.com/embed/fii4OecPnz0" 
+                        title="Sub) Simple Table Lamps made of Reuse Glass Bottles, DIY Hanging Pots by Macrame | Decorating Ideas" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <!-- Tags -->
+                <!-- <div class="tags">
+                    <a class="tags__item" href="">#Coding</a>
+                    <a class="tags__item" href="">#HTML</a>
+                    <a class="tags__item" href="">#CSS</a>
+                    <a class="tags__item" href="">#JavaScript</a>
+                </div> -->
+                
+                <!-- Title -->
+                <h3 class="video-title">youtube clone | create working youtube clone</h3>
+                <!-- Info -->
+                <div class="video-player-info">
+                    <p class="video-player-info__text">1225 views &bull; 2days ago</p>
+                    <div class="video-actions">
+                        <a class="video-actions__item" href="">
+                            <i class="ri-thumb-up-line"></i>
+                            125
+                        </a>
+                        <a class="video-actions__item" href="">
+                            <i class="ri-thumb-down-line"></i>
+                            2
+                        </a>
+                        <a class="video-actions__item" href="">
+                            <i class="ri-share-forward-line"></i>
+                            Share
+                        </a>
+                        <a class="video-actions__item" href="">
+                            <i class="ri-play-list-add-line"></i>
+                            Save
+                        </a>
+                    </div>  
+                </div>
+
+                <hr>
+                <!-- publisher -->
+                <div class="publisher">
+                    <img class="publisher__img" src="../assets/images/Jack.png" alt="avatar">
+                    <div class="publisher_info">
+                        <h3 class="publisher-info__channel-name">Modern web</h3>
+                        <p class="publisher-info__subscribers">500k Subscribers</p>
+                    </div>
+                    <button class="subscribe-button">
+                        Subscribe
+                    </button>
+                </div>
+                <!-- Video description -->
+                <div class="video-description">
+
+                    <p class="video-description__text">Channel that makes learning easy</p>
+                    <p class="video-description__text">Subscribe Modern Web to watch more tutotials on web development</p>
+
+                    <hr>
+
+                    <h4 class="comments-count">134 Comments</h4>
+
+                    <div class="new-comment">
+                        <img class="new-comment__img" src="../assets/images/cameron.png" alt="avatar">
+                        <input class="new-comment__input" type="text" placeholder="Write comment ...">
+                    </div>
+
+                    <div class="old-comments">
+
+                        <div class="old-comment">
+                            <img class="old-comment__img" src="../assets/images/gerard.png" alt="avatar">
+                            <div class="old-comment-content">
+                                <h3 class="old-comment-content__autor">Jack Nilcholson <span> 2 days ago</span></h3>
+                                <p class="old-comment-content__text">
+                                    A global computer network providing a variety of information 
+                                    and communication facilities, consisting of interconnected networks 
+                                    using standardized communication protocols
+                                </p>
+                                <div class="acomment-actions">
+                                    <a class="acomment-actions__item" href="">
+                                        <i class="ri-thumb-up-fill"></i>
+                                        244
+                                    </a>
+                                    <a class="acomment-actions__item" href="">
+                                        <i class="ri-thumb-down-fill"></i>
+                                        2
+                                    </a>
+                                    <a class="acomment-actions__item" href="">
+                                        REPLY
+                                    </a>
+                                    <a class="acomment-actions__item" href="">
+                                        All replies
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="old-comment">
+                            <img class="old-comment__img" src="../assets/images/megan.png" alt="avatar">
+                            <div class="old-comment-content">
+                                <h3 class="old-comment-content__autor">Jack Nilcholson <span> 2 days ago</span></h3>
+                                <p class="old-comment-content__text">
+                                    A global computer network providing a variety of information 
+                                    and communication facilities, consisting of interconnected networks 
+                                    using standardized communication protocols
+                                </p>
+                                <div class="acomment-actions">
+                                    <a class="acomment-actions__item" href="">
+                                        <i class="ri-thumb-up-fill"></i>
+                                        244
+                                    </a>
+                                    <a class="acomment-actions__item" href="">
+                                        <i class="ri-thumb-down-fill"></i>
+                                        2
+                                    </a>
+                                    <a class="acomment-actions__item" href="">
+                                        REPLY
+                                    </a>
+                                    <a class="acomment-actions__item" href="">
+                                        All replies
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="old-comment">
+                            <img class="old-comment__img" src="../assets/images/tom.png" alt="avatar">
+                            <div class="old-comment-content">
+                                <h3 class="old-comment-content__autor">Jack Nilcholson <span> 2 days ago</span></h3>
+                                <p class="old-comment-content__text">
+                                    A global computer network providing a variety of information 
+                                    and communication facilities, consisting of interconnected networks 
+                                    using standardized communication protocols
+                                </p>
+                                <div class="acomment-actions">
+                                    <a class="acomment-actions__item" href="">
+                                        <i class="ri-thumb-up-fill"></i>
+                                        244
+                                    </a>
+                                    <a class="acomment-actions__item" href="">
+                                        <i class="ri-thumb-down-fill"></i>
+                                        2
+                                    </a>
+                                    <a class="acomment-actions__item" href="">
+                                        REPLY
+                                    </a>
+                                    <a class="acomment-actions__item" href="">
+                                        All replies
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>            
+            </div>
+            <!-- Video list -->
+            <div class="video-list">
+
+                <div class="video">
+                    <!-- Video thumbnail -->
+                    <a href="" class="video__small-thumbnail">
+                        <img class="video__img" src="../assets/images/thumbnail.png" alt="">
+                    </a>
+                    <!-- Video info -->
+                        <div class="video-info">
+                            <h4 class="video-info__title">youtube clone | create working youtube clone</h4>
+                            <p class="video-info__channel-name">modern web</p>
+                            <p class="video-info__publisher-info">15k Views 2days</p>
+                        </div>
+                </div>
+
+                <div class="video">
+                    <!-- Video thumbnail -->
+                    <a href="" class="video__small-thumbnail">
+                        <img class="video__img" src="../assets/images/thumbnail.png" alt="">
+                    </a>
+                    <!-- Video info -->
+                        <div class="video-info">
+                            <h4 class="video-info__title">youtube clone | create working youtube clone</h4>
+                            <p class="video-info__channel-name">modern web</p>
+                            <p class="video-info__publisher-info">15k Views 2days</p>
+                        </div>
+                </div>
+                <div class="video">
+                    <!-- Video thumbnail -->
+                    <a href="" class="video__small-thumbnail">
+                        <img class="video__img" src="../assets/images/thumbnail.png" alt="">
+                    </a>
+                    <!-- Video info -->
+                        <div class="video-info">
+                            <h4 class="video-info__title">youtube clone | create working youtube clone</h4>
+                            <p class="video-info__channel-name">modern web</p>
+                            <p class="video-info__publisher-info">15k Views 2days</p>
+                        </div>
+                </div>
+                <div class="video">
+                    <!-- Video thumbnail -->
+                    <a href="" class="video__small-thumbnail">
+                        <img class="video__img" src="../assets/images/thumbnail.png" alt="">
+                    </a>
+                    <!-- Video info -->
+                        <div class="video-info">
+                            <h4 class="video-info__title">youtube clone | create working youtube clone</h4>
+                            <p class="video-info__channel-name">modern web</p>
+                            <p class="video-info__publisher-info">15k Views 2days</p>
+                        </div>
+                </div>
+                <div class="video">
+                    <!-- Video thumbnail -->
+                    <a href="" class="video__small-thumbnail">
+                        <img class="video__img" src="../assets/images/thumbnail.png" alt="">
+                    </a>
+                    <!-- Video info -->
+                        <div class="video-info">
+                            <h4 class="video-info__title">youtube clone | create working youtube clone</h4>
+                            <p class="video-info__channel-name">modern web</p>
+                            <p class="video-info__publisher-info">15k Views 2days</p>
+                        </div>
+                </div>
+                <div class="video">
+                    <!-- Video thumbnail -->
+                    <a href="" class="video__small-thumbnail">
+                        <img class="video__img" src="../assets/images/thumbnail.png" alt="">
+                    </a>
+                    <!-- Video info -->
+                        <div class="video-info">
+                            <h4 class="video-info__title">youtube clone | create working youtube clone</h4>
+                            <p class="video-info__channel-name">modern web</p>
+                            <p class="video-info__publisher-info">15k Views 2days</p>
+                        </div>
+                </div>
+                <div class="video">
+                    <!-- Video thumbnail -->
+                    <a href="" class="video__small-thumbnail">
+                        <img class="video__img" src="../assets/images/thumbnail.png" alt="">
+                    </a>
+                    <!-- Video info -->
+                        <div class="video-info">
+                            <h4 class="video-info__title">youtube clone | create working youtube clone</h4>
+                            <p class="video-info__channel-name">modern web</p>
+                            <p class="video-info__publisher-info">15k Views 2days</p>
+                        </div>
+                </div>
+                <div class="video">
+                    <!-- Video thumbnail -->
+                    <a href="" class="video__small-thumbnail">
+                        <img class="video__img" src="../assets/images/thumbnail.png" alt="">
+                    </a>
+                    <!-- Video info -->
+                        <div class="video-info">
+                            <h4 class="video-info__title">youtube clone | create working youtube clone</h4>
+                            <p class="video-info__channel-name">modern web</p>
+                            <p class="video-info__publisher-info">15k Views 2days</p>
+                        </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 
+        - custom js link
+     -->
+    <script src="../scripts/player.js"></script>
+</body>
+
+</html>

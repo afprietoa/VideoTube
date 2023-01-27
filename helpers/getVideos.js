@@ -1,5 +1,3 @@
-
-
 export const getVideos = async(API_KEY, VIDEO_URL) =>{
     try {
         const params ={
